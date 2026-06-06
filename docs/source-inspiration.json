@@ -1,0 +1,23 @@
+{
+  "rank": 2,
+  "role": "secondary",
+  "source_repo": "d3vilh/raspberry-gateway",
+  "github_url": "https://github.com/d3vilh/raspberry-gateway",
+  "gitreverse_url": "https://gitreverse.com/d3vilh/raspberry-gateway",
+  "stars": 174,
+  "forks": 21,
+  "language": "Jinja",
+  "license": "Apache-2.0",
+  "score": 70.91,
+  "resume_matches": [
+    "docker",
+    "monitoring",
+    "raspberry-pi",
+    "soc"
+  ],
+  "project_angle": "raspberry-pi-networking",
+  "use_mode": "inspiration_only",
+  "copy_code_allowed": false,
+  "planned_output_repo": "pi-gateway-watch",
+  "unique_value": "Create an original raspberry pi networking project based on resume skills, not copied code."
+}
