@@ -1,23 +1,46 @@
-# Config Example
+# Config Reference
 
-Project: pi-gateway-watch
+Copy `config.example.json` from the project root and edit it for your targets.
 
-This is a safe sample config. Do not store secrets here.
+## TCP check
 
-```yaml
-monitoring:
-  root_path: "/"
-  warning_disk_percent: 80
-  critical_disk_percent: 90
-
-reporting:
-  output_format: "json"
-  include_load_average: true
-  include_disk_usage: true
+```json
+{
+  "name": "dns",
+  "type": "tcp",
+  "host": "1.1.1.1",
+  "port": 53,
+  "timeout": 2.0
+}
 ```
 
-## Privacy rules
+## HTTP check
 
-- Do not include real private hostnames.
-- Do not include private IP addresses.
-- Do not include tokens, passwords, or `.env` values.
+```json
+{
+  "name": "web",
+  "type": "http",
+  "url": "https://example.com",
+  "timeout": 3.0
+}
+```
+
+## Full example
+
+```json
+{
+  "checks": [
+    {"name": "dns",  "type": "tcp",  "host": "1.1.1.1",     "port": 53},
+    {"name": "web",  "type": "http", "url": "https://example.com"},
+    {"name": "ntp",  "type": "tcp",  "host": "pool.ntp.org", "port": 123}
+  ]
+}
+```
+
+Run with:
+
+```bash
+python src/app.py --config my-checks.json
+```
+
+Only use public or test-safe targets in files committed to version control.
