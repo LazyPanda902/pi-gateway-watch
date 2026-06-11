@@ -14,11 +14,9 @@ such as uptime and CPU temperature.
 - Human-readable or JSON output
 - `--output FILE` to save the JSON report to a file for logging or downstream processing
 - Predictable exit codes (0 = all OK, 1 = any failure) for scripting
-- GitHub Actions CI on Python 3.11, 3.12, and 3.13
 
 ## Requirements
 
-- Python 3.11 or later
 - No external runtime dependencies (stdlib only)
 - `pytest` for running the test suite
 

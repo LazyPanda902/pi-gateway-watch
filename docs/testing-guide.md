@@ -32,5 +32,3 @@ Specifically:
 | `tests/test_app.py` | `CheckResult` serialisation, TCP/HTTP probe logic, config loading, `run_checks` dispatch, Pi metric helpers |
 
 ## CI
-
-GitHub Actions runs the full suite on every push and pull request across Python 3.11, 3.12, and 3.13. See `.github/workflows/ci.yml`.

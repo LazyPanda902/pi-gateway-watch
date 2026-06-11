@@ -10,7 +10,6 @@
 - [x] `--pi-info` flag for uptime and CPU temperature
 - [x] `--version` flag
 - [x] Predictable exit codes (0 / 1) for scripting
-- [x] GitHub Actions CI on Python 3.11, 3.12, and 3.13
 
 ## v0.2 — Improved observability
 
