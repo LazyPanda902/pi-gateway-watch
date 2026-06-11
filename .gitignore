@@ -6,3 +6,5 @@ __pycache__/
 .coverage
 dist/
 build/
+docs/source-inspiration.json
+.ruff_cache/
