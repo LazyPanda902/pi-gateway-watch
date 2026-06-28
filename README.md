@@ -9,7 +9,7 @@ such as uptime and CPU temperature.
 ## Why this project exists
 
 Raspberry Pi gateways and small homelab routers often need quick checks for DNS, HTTP, TCP reachability, and local Pi health. Pi Gateway Watch provides a small script-friendly tool that can run from cron, systemd timers, SSH sessions, or local troubleshooting workflows without a heavyweight monitoring stack.
-\n## Features
+## Features
 
 - TCP reachability checks with latency measurement
 - HTTP endpoint health checks (2xx–3xx = OK)
